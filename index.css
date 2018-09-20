@@ -1,0 +1,392 @@
+body {
+    background-color: slategray;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'cocogoose';
+    src: url('fonts/Cocogoose.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cocogoose-thin';
+    src: url('fonts/Cocogoose-thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cocogoose-italic';
+    src: url('fonts/Cocogoose-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cocogoose-semi';
+    src: url('fonts/Cocogoose-semi.ttf') format('truetype');
+}
+
+#numbers {
+    font-family: Arial;
+
+}
+
+h1 {
+    font-family: "cocogoose-thin";
+    font-size: 55px;
+    color: rgb(73, 83, 94);
+    word-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: "cocogoose-thin";
+    font-size: 16px;
+    color: white;
+    word-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 92px;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: white;
+}
+
+h3 {
+    font-family: Arial;
+    font-size: 10.5px;
+    color: white;
+    word-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    display: inline;
+    text-decoration: none;
+
+}
+
+div {
+    text-align: center;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    margin-top: 10px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    float: right;
+    padding-top: 10px;
+    background: slategray;
+    padding-right: 15px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 50;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    
+}
+
+nav li {
+    margin-top: 15px;
+    float: right;
+    padding-left: 30px;
+}
+
+nav li a{
+    font-family: 'cocogoose';
+    font-size: 10.5px;
+    color: white;
+    word-spacing: 1px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+nav li a.active {
+    color:  rgb(73, 83, 94)
+}
+
+nav li a:hover {
+    color: rgb(73, 83, 94);
+}
+
+#resume {
+    border: 2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+a#resume:hover{
+    color: black;  
+    background: white;
+}
+
+a#resume:link {
+    color: white;
+}
+
+#aboutme, #learnmore, #experience, #projects {
+    width: 100%
+}
+
+#aboutme{
+    padding: 242px 0 300px 0;
+    height: 200px;
+    background: slategray;
+}
+
+#learnmore{
+    padding-top: 145px;
+    padding-right: 250px;
+    height: 625px;
+    background: #A2ABB5;
+}
+
+#experience{
+    height: 600px;
+    background: #91ADC2;
+    padding-top: 175px;
+    padding-right: 250px;
+}
+
+#projects{
+    height: 600px;
+    background: #BFD1E5;
+    padding-top: 160px;
+    padding-right: 250px;
+}
+
+#title{
+    color: rgb(73, 83, 94);
+    font-size: 16px;
+}
+
+.bio {
+    background: white;
+    color: rgb(73, 83, 94);
+    text-align: left;
+    display: inline-block;
+    width: 780px;
+    margin: auto;
+    font-family: 'cocogoose';
+    font-size: 10.5px;
+    color: rgb(73, 83, 94);
+    word-spacing: 1px;
+    letter-spacing: 3px;
+}
+
+.bio p {
+    padding-right: 20px;
+    padding-top: 90px;
+}
+
+img.resize {
+    max-width: 43%;
+    max-height: 43%;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 22px;
+}
+
+table{
+    font-family: "cocogoose";
+    font-size: 10px;
+    color: white;
+    width: 930px;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    color: rgb(73, 83, 94);
+    display: inline-block;
+    padding-right: 91px;
+}
+
+td{
+    text-align: right;
+    padding-right: 10px;
+    vertical-align: top;
+    padding-left: 20px;
+
+}
+
+#experience a:hover{
+    color: white;
+}
+
+#pet{
+    font-family: "cocogoose-semi";
+    color: rgb(73, 83, 94);
+}
+
+.border {
+    border-right: dashed 1px white;
+}
+.description {
+    text-align: left;
+}
+
+.duration {
+    padding-top: 12px;
+    color: white;
+    font-size: 13px;
+    font-family: "cocogoose-italic";
+}
+
+#location {
+    font-size: 11.5px;
+    font-family: "cocogoose-semi";
+    color: rgb(73, 83, 94);
+}
+
+blockquote {
+    text-align: left;
+    margin-left: 20px;
+    color: rgb(73, 83, 94);
+}
+
+.second {
+    display: none;
+}
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin-top: -50px;
+    margin-left: 4px;
+    display: inline-block;
+    padding-bottom: 18px;
+    position: relative;
+    z-index: 30;
+}
+
+.slides {
+    text-align: left;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    color: rgb(73, 83, 94);
+    background: white;
+    width: 800px;
+}
+
+.nonPrimary {
+    display: none;
+}
+
+.projectTitle {
+    font-family: "cocogoose-semi";
+    font-size: 16px;
+}
+
+.projectDate {
+    font-family: "cocogoose-italic";
+    font-size: 11px;
+}
+
+.projectDescription {
+    font-family: "cocogoose";
+    font-size: 10.5px;
+    padding-bottom: 100px;
+    padding-top: 135px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+img.resizeProject {
+    max-width: 50%;
+    max-height: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    transition: 0.6s ease;
+  }
+  
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+    margin-right: -40px;
+}
+
+.prev {
+    border-radius: 3px 0 0 3px;
+    margin-left: -440px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(73, 83, 94);
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 4px;
+    background-color:white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.dot.active, .dot:hover {
+    background-color: rgb(73, 83, 94);
+  }
+  
+.dot1 {
+    background-color:rgb(73, 83, 94);
+}
+
+.page2 {
+    background-color: #A2ABB5;
+}
+
+.page3 {
+    background-color: #91ADC2;
+}
+
+.page4 {
+    background-color: #BFD1E5;
+}
+
+#homePage {
+    color: rgb(73, 83, 94);
+}

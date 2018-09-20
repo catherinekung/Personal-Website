@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Catherine Kung</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        
+    </head>
+
+    <body>
+        <script src="index.js"></script>
+        <header id="header">
+            <div class="content">
+                <nav id ="navbar">
+                    <ul>
+                        <li><a href="Resume.pdf" class ="resume" target="_blank">RESUME</a></li>
+                        <li><a href="#projects" onmouseover="hover('projectsPage')" onmouseout="unhover('projectsPage')"id = "projectsPage" class = "hi">PROJECTS</a></li>
+                        <li><a href="#experience" onmouseover="hover('experiencePage')" onmouseout="unhover('experiencePage')"id = "experiencePage">EXPERIENCE</a></li>     
+                        <li><a href="#learnmore" onmouseover="hover('aboutPage')" onmouseout="unhover('aboutPage')" id = "aboutPage">ABOUT ME</a></li>
+                        <li><a href="#aboutme" onmouseover="hover('homePage')" onmouseout="unhover('homePage')"id= "homePage">HOME</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="aboutme">
+            <h1>CATHERINE KUNG <br /></h1>
+            <br>
+            <h2>DEVELOPER | ADVENTURER | EXPERIMENTOR</h2>
+            <h3><a href= "#learnmore" id ="resume">LEARN MORE</a></h3>
+        </div> 
+
+        <div id="learnmore">
+            <div align = "center" class="bio">
+                <img align = "left" class = "resize" src = "images/profile.jpg">
+                <p>
+                    <span id = "title">HELLO!<br /></span>
+                    <br>
+                    <br>
+                    <br>
+                    MY NAME IS CATHERINE KUNG AND I AM A THIRD YEAR COMPUTER SCIENCE MAJOR AND INFORMATICS MINOR AT THE 
+                    UNIVERSITY OF CALIFORNIA, IRVINE. MY FASCINATION IN THE ABILITY TO TEACH A COMPUTER AS OPPOSED TO 
+                    EXPLICITLY PROGRAMMING IT HAS LED ME TO DECLARE A SPECIALIZATION IN INTELLIGENT SYSTEMS AND HAS 
+                    FUELED MY INTEREST IN AI. AS I BELIEVE A WELL ROUNDED EDUCATION ENTAILS THE MERGING OF ACADEMIC 
+                    LEARNING WITH PROFESSIONAL APPLICATION, I AM SEEKING A SUMMER INTERNSHIP THAT IS CAPABLE OF 
+                    CHALLENGING MY CURRENT SKILLS WHILE BROADENING MY RANGE OF EXPERIENCES AND KNOWLEDGE. 
+                </p>     
+            </div>
+        </div>
+
+        <div id="experience">
+            <table>
+                <tr>
+                    <td width= 40% class= "duration border"><span id="numbers"><i>2017</i></span>-CURRENT<br />FELLOW</td>
+                    <td>
+                        <p class= "description">
+                            <span id= "location">CALIT<span id="numbers"><b>2</b></span> UC IRVINE DIVISION</span><br />
+                            <blockquote>
+                                - WORKED UNDER THE GUIDANCE OF DR. SERGIO GAGO IN EXAMINING THE EFFICACY OF OUR
+                                IN-HOME EXERCISING DEVICE: <a id= "pet" href="#projects"><i>PET</i></a> IN PROMOTING PHYSICAL EXERCISE AT HOME<br />
+                                - PRESENTED THE FINDINGS OF OUR RESEARCH AT UCI'S ANNUAL RESEARCH SYMPOSIUM<br />
+                            </blockquote>
+                            
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class= "duration border">SUMMER <span id ="numbers"><i>2017</i></span><br />PROGRAMMING INSTRUCTOR</td>
+                    <td>
+                        <p class= "description">
+                            <span id= "location">TECHSMART ACADEMY</span><br />
+                            <blockquote>
+                                - TAUGHT CHILDREN AGES NINE TO FOURTEEN THE FUNDAMENTALS OF PYTHON AND JAVA, PRIMARILY COVERING
+                                DATA TYPES, SIMPLE DATA STRUCTURES, CONDITIONAL STATEMENTS AND LOOPING METHODS <br />
+                                - INTEGRATED A CURRICULUM UTILIZING THE POPULAR VIDEO GAME MINECRAFT, SPECIFICALLY INTRODUCING
+                                STUDENTS TO AFOREMENTIONED CONCEPTS BY IMPLEMENTING MODIFICATIONS TO 
+                                FUNCTIONS AND CHARACTERS OF THE GAME <br /> 
+                            </blockquote>
+                            
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class= "duration border"><span id="numbers"><i>2017-2018</i></span><br />PEER MENTOR</td>
+                    <td>
+                        <p class= "description">
+                            <span id= "location">CAMPUSWIDE HONORS PROGRAM PEER MENTOR PROGRAM AT UCI</span><br />
+                            <blockquote>
+                                - COLLABORATED WITH OTHER MENTORS IN CREATING A SECURE ENVIRONMENT FOR INCOMING UNDERGRADUATE STUDENTS 
+                                BY ANSWERING QUESTIONS RELATED TO STUDENT LIFE AND GUIDING STUDENTS TO ON-CAMPUS RESOURCES <br />
+                                - SPECIFICALLY MENTORED STUDENTS WITH AN INTEREST IN COMPUTER SCIENCE OR RELATED FIELDS 
+                                OF STUDY <br />  
+                            </blockquote>
+                            
+                        </p>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+
+        <div id="projects">
+            <div class= "slideshow">
+                <div class= "slides">
+                    <img align= "right" src= "images/PET.png" class = "resizeProject">
+                    <p class= "projectDescription">
+                        <span class= "projectTitle">PET: PERSONAL EMBODIED TRAINER</span><br />
+                        <br>
+                        <span class= "projectDate"><span id="numbers"><i>2017</i></span>-CURRENT</span><br />
+                        <br>
+                        - COLLABORATED WITH TEAM MEMBERS IN DEVELOPING A MOBILE-WEARABLE-TV APPLICATION THAT SERVES TO 
+                        ASSIST USERS IN TRACKING THEIR WORKOUT PROGRESS AND PROVIDES FEEDBACK FOR IMPROVEMENTS ON FORM 
+                        AND SPEED OF PERFORMED EXERCISE <br />
+                        - SPECIFICALLY WORKED ON THE FRONT-END TEAM IN IMPROVING UPON THE USER INTERFACE OF THE APPLICATION 
+                        AND IMPLEMENTING NEW FEATURES UTILIZING HTML, CSS AND JAVASCRIPT. <br />
+                        <br>
+                        <br>
+                    </p>
+                </div>
+
+                <div class= "slides nonPrimary">
+                    <img align= "left" src= "images/OthelloBoard.png" class = "resizeProject">
+                    <p class= "projectDescription">
+                        <span class= "projectTitle">OTHELLO</span><br />
+                        <br>
+                        <span class = "projectDate">MARCH <span id="numbers"><i>2018</i></span></span><br />
+                        <br>
+                        - CREATED A GAME MIMICKING THE BOARD GAME OTHELLO AS A COURSE PROJECT USING PYTHON AND DEVELOPED THE GUI
+                        UTILZING TKINTER <br />
+                        - WHILE THE RULES OF THE GAME REFLECT THAT OF OTHELLO, USERS ARE ABLE TO SPECIFICY THE NUMBER OF 
+                        ROWS AND COLUMNS IN THE BOARD, THE FIRST PLAYER, HOW THE GAME IS WON (WITH LESS OR MORE PIECES) 
+                        AND THE LOCATION OF THE STARTING PIECES <br />
+                        - LATER IMPLEMENTED AN AI UTILIZING A RECURSIVE MINMAX ALGORITHM TO DETERMINE OPTIMAL MOVES <br />
+                    </p>
+                </div>
+                <a class="prev" onclick="advanceSlide(-1)">&#10094;</a>
+                <a class="next" onclick="advanceSlide(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot dot1" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+            </div>
+        </div>
+
+                
+    </body>
+</html>
