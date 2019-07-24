@@ -20,7 +20,7 @@ function alterColor() {
     page4 = 0;
   }
   else {
-    if (document.body.scrollTop > 1500 && document.body.scrollTop < 2270 || document.documentElement.scrollTop > 1500 && document.documentElement.scrollTop < 2270){ 
+    if (document.body.scrollTop > 1500 && document.body.scrollTop < 2170 || document.documentElement.scrollTop > 1500 && document.documentElement.scrollTop < 2170){ 
       document.getElementById("navbar").classList = "";
       document.getElementById("navbar").classList.add("page3");
       document.getElementById("aboutPage").style.color = "white";
@@ -32,7 +32,7 @@ function alterColor() {
       page4 = 0;
     }
     else {
-      if (document.body.scrollTop > 2270 || document.documentElement.scrollTop > 2270) {
+      if (document.body.scrollTop > 2170 || document.documentElement.scrollTop > 2170) {
         document.getElementById("navbar").classList = ""; 
         document.getElementById("navbar").classList.add("page4");
         document.getElementById("projectsPage").style.color = "rgb(73, 83, 94)";
