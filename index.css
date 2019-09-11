@@ -175,7 +175,7 @@ a#resume:link {
 }
 
 #experience{
-    height: 600px;
+    height: 700px;
     background: #91ADC2;
     padding-top: 100px;
     padding-right: 250px;
@@ -231,6 +231,7 @@ table{
     color: rgb(73, 83, 94);
     display: inline-block;
     padding-right: 91px;
+    padding-bottom: 100px;
 }
 
 td{
