@@ -1,164 +1,214 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Catherine Kung</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
-        
-    </head>
 
-    <body>
-        <script src="index.js"></script>
-        <header id="header">
-            <div class="content">
-                <nav id ="navbar">
-                    <ul>
-                        <li><a href="Resume.pdf" class ="resume" target="_blank">RESUME</a></li>
-                        <li><a href="#projects" onmouseover="hover('projectsPage')" onmouseout="unhover('projectsPage')"id = "projectsPage" class = "hi">PROJECTS</a></li>
-                        <li><a href="#experience" onmouseover="hover('experiencePage')" onmouseout="unhover('experiencePage')"id = "experiencePage">EXPERIENCE</a></li>     
-                        <li><a href="#learnmore" onmouseover="hover('aboutPage')" onmouseout="unhover('aboutPage')" id = "aboutPage">ABOUT ME</a></li>
-                        <li><a href="#aboutme" onmouseover="hover('homePage')" onmouseout="unhover('homePage')"id= "homePage">HOME</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+<head>
+    <title>Catherine Kung</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 
-        <div id="aboutme">
-            <h1>CATHERINE KUNG <br /></h1>
-            <br>
-            <h2>DEVELOPER | ADVENTURER | EXPERIMENTOR</h2>
-            <h3><a href= "#learnmore" id ="resume">LEARN MORE</a></h3>
-        </div> 
+</head>
 
-        <div id="learnmore">
-            <div align = "center" class="bio">
-                <img align = "left" class = "resize" src = "images/profile.jpg">
-                <p>
-                    <span id = "title">HELLO!<br /></span>
-                    <br>
-                    <br>
-                    <br>
-                    MY NAME IS CATHERINE KUNG AND I AM A FOURTH YEAR COMPUTER SCIENCE MAJOR AND INFORMATICS MINOR AT THE 
-                    UNIVERSITY OF CALIFORNIA, IRVINE. MY FASCINATION IN THE ABILITY TO TEACH A COMPUTER AS OPPOSED TO 
-                    EXPLICITLY PROGRAMMING IT HAS LED ME TO DECLARE A SPECIALIZATION IN INTELLIGENT SYSTEMS AND HAS 
-                    FUELED MY INTEREST IN AI. AS I BELIEVE A WELL ROUNDED EDUCATION ENTAILS THE MERGING OF ACADEMIC 
-                    LEARNING WITH PROFESSIONAL APPLICATION, I AM SEEKING A FULL-TIME POSITION THAT IS CAPABLE OF 
-                    CHALLENGING MY CURRENT SKILLS WHILE BROADENING MY RANGE OF EXPERIENCES AND KNOWLEDGE. 
-                </p>     
-            </div>
+<body>
+    <script src="index.js"></script>
+    <header id="header">
+        <div>
+            <nav id="navbar" class="main">
+                <ul>
+
+                    <li style="float:left;"><a href="mailto:catherinekung14@gmail.com" >Email</a></li>
+                    <li style="float:left;"><a href="https://www.linkedin.com/in/catherine-kung-164204149/" target="_blank">LinkedIn</a></li>
+                    <li><a href="Resume.pdf" id="resume" class="bordered" target="_blank">Resume</a></li>
+                    <li><a href="#projects" id="projectsPage" class="hi">Projects</a></li>
+                    <li><a href="#experience" id="experiencePage">Experience</a></li>
+                    <li><a href="#aboutme" id="aboutPage">About&nbspme</a></li>
+                    <li><a href="#home" id="homePage" class="active">Home</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+    <div>
+        <section id="home" class="typewriter title main">
+            <h3>Hi, my name is</h3>
+            <h1>CATHERINE KUNG</h1>
+            <h2>Software Engineer</h2>
+            <br />
+            <br />
+            <br />
+            <a class="bordered learnMore fadeIn"href="#aboutme">Learn more</a>
+        </section>
 
-        <div id="experience">
-            <table>
-                <tr>
-                    <td width= 40% class= "duration border">JUNE <span id="numbers"><i>2019 </i></span>- SEPTEMBER <span id="numbers"><i>2019 </i><br />SOFTWARE ENGINEERING INTERN</td>
-                    <td>
-                        <p class= "description">
-                            <span id= "location">INTUIT<br />
-                            <blockquote>
-                            - WORKED ON AN INTERNAL WEB APPLICATION USED BY TAX ANALYSTS TO CREATE AND MODIFY MODELS FOR CALCULATING TAX RETURNS <br />
-                            - ASSISTED IN INTEGRATING THE FRONTEND OF WEB APPLICATION WITH THE BACKEND USING REST API AND REACT.JS, IMPROVING PERFORMANCE TIME BY <span id="numbers">80%<br />
-                            - IMPLEMENTED SEVERAL REACT COMPONENTS WITH REDUX FRAMEWORK TO ENHANCE USABILITY OF WEB APPLICATION<br />
-                            - DEVELOPED THE TEST AUTOMATION INFRASTRUCTURE FOR WEB APPLICATION UTILIZING SELENIUM, JENKINS AND
-DOCKER, ACCELERATING THE DISCOVERY OF BUGS AND MINIMIZING THE RATE OF DEFECTS BEING RELEASED<br />
-                            </blockquote>
-                                
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td width= 40% class= "duration border">JAN <span id="numbers"><i>2019 </i></span>- CURRENT<br />RESEARCH ASSISTANT</td>
-                    <td>
-                        <p class= "description">
-                            <span id= "location">INVESTIGATING VIRTUAL LEARNING ENVIRONMENT (IVLE)<br />
-                            <blockquote>
-                                - PREDICTED ACADEMIC SUCCESS IN HIGHER EDUCATION BY EXAMINING STUDENT CLICKSTREAM 
-                                DATA FROM ELEVEN ONLINE COURSES OFFERED AT A PUBLIC UNIVERSITY <br />
-                                - TRAINED MULTIPLE PREDICTIVE MODELS UTILIZING VARIOUS COMBINATIONS OF PREDICTORS, 
-                                INCLUDING DEMOGRAPHICS, HIGH SCHOOL GPA, TIME SPENT ON TASKS, AND PATTERNS IN CLICK ACTIVITY<br />
-                            </blockquote>
-                            
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td width= 40% class= "duration border">JAN <span id="numbers"><i>2017 </i></span>- JUNE <span id="numbers"><i>2019</i></span><br />RESEARCH ASSISTANT</td>
-                    <td>
-                        <p class= "description">
-                            <span id= "location">CALIT<span id="numbers"><b>2</b></span> UC IRVINE DIVISION</span><br />
-                            <blockquote>
-                                    - WORKED UNDER THE GUIDANCE OF DR. SERGIO GAGO IN EXAMINING THE EFFICACY OF OUR
-                                    IN-HOME EXERCISING DEVICE: <a id= "pet" href="#projects"><u><i>PET</i></u></a> IN PROMOTING PHYSICAL EXERCISE AT HOME<br />
-                                    - PRESENTED THE FINDINGS OF OUR RESEARCH AT UC IRVINE'S ANNUAL RESEARCH SYMPOSIUM<br />
-                            </blockquote>
-                        </p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class= "duration border">JUNE <span id ="numbers"><i>2017 </i></span>- AUG <span id ="numbers"><i>2017</i></span><br />PROGRAMMING INSTRUCTOR</td>
-                    <td>
-                        <p class= "description">
-                            <span id= "location">TECHSMART ACADEMY</span><br />
-                            <blockquote>
-                                - TAUGHT CHILDREN AGES NINE TO FOURTEEN THE FUNDAMENTALS OF PYTHON AND JAVA, PRIMARILY COVERING
-                                DATA TYPES, SIMPLE DATA STRUCTURES, CONDITIONAL STATEMENTS AND LOOPING METHODS <br />
-                                - INTEGRATED A CURRICULUM UTILIZING THE POPULAR VIDEO GAME MINECRAFT, SPECIFICALLY INTRODUCING
-                                STUDENTS TO AFOREMENTIONED CONCEPTS BY IMPLEMENTING MODIFICATIONS TO 
-                                FUNCTIONS AND CHARACTERS OF THE GAME <br /> 
-                            </blockquote>
-                            
-                        </p>
-                    </td>
-                </tr>
-                
-            </table>
-        </div>
-
-        <div id="projects">
-            <div class= "slideshow">
-                <div class= "slides">
-                    <img align= "right" src= "images/PET.png" class = "resizeProject">
-                    <p class= "projectDescription">
-                        <span class= "projectTitle">PET: PERSONAL EMBODIED TRAINER</span><br />
-                        <br>
-                        <span class= "projectDate"><span id="numbers"><i>2017</i></span>-CURRENT</span><br />
-                        <br>
-                        - COLLABORATED WITH TEAM MEMBERS IN DEVELOPING A MOBILE-WEARABLE-TV APPLICATION THAT SERVES TO 
-                        ASSIST USERS IN TRACKING THEIR WORKOUT PROGRESS AND PROVIDES FEEDBACK FOR IMPROVEMENTS ON FORM 
-                        AND SPEED OF PERFORMED EXERCISE <br />
-                        - SPECIFICALLY WORKED ON THE FRONT-END TEAM IN IMPROVING UPON THE USER INTERFACE OF THE APPLICATION 
-                        AND IMPLEMENTING NEW FEATURES UTILIZING HTML, CSS AND JAVASCRIPT. <br />
-                        <br>
-                        <br>
+        <section id="aboutme" class="gradientDark">
+            <div id="myStory">
+                <div id="myStoryLeftColumn">
+                    <img class="resize" src="images/Profile.jpg">
+                </div>
+                <div id="myStoryRightColumn" class="title">
+                    <p>
+                    <h3 style="color:white;padding: 0;margin: 0;">This is</h3>
+                    <h1 style="color:white;padding: 0;margin: 0;">MY STORY</h1>
+                    <br />
+                    <br />
+                    <br />
+                    <p class="bio description main">
+                        Hi! I'm Catherine and I'm currently a Software Engineer on the Machine Learning Platform team
+                        at Intuit. I graduated with a B.S in Computer Science and minor in Informatics from the
+                        University of California, Irvine in 2020. My fascination with the ability to teach a computer as
+                        opposed to explicitly programming it has fueled my interest in Artificial Intelligence. My
+                        ambitions to develop a well-rounded perspective of this field has likewise garnered my interest
+                        in Human Computer Interaction. My ultimate goal is to venture into the intersection of these
+                        areas while working towards my ambition to develop accessible technology driven by social
+                        inclusivity.
+                    </p>
                     </p>
                 </div>
+            </div>
+        </section>
 
-                <div class= "slides nonPrimary">
-                    <img align= "left" src= "images/OthelloBoard.png" class = "resizeProject">
-                    <p class= "projectDescription">
-                        <span class= "projectTitle">OTHELLO</span><br />
+        <section id="experience" class="timeline gradientMedium">
+            <div style="margin-top: 35px;" class="experiencePosition title">
+                SOFTWARE ENGINEER<br />
+                <span class="experienceDate description">AUG 2020 - PRESENT</span>
+            </div>
+            <div class="timelineLine">
+                <div style="margin-top: 35px;" class="timelinePoint"></div>
+            </div>
+            <div style="margin-top: 35px;" class="timelineEntry main">
+                <span id="experienceLocation" class="title" class="title">INTUIT</span><br />
+                <br />
+                <p class="description">
+                    > Facilitated the onboarding of a platform backend service onto internal data lake and created
+                    dashboards on Kibana to expedite the process by which platform insights are generated
+                    <br /><br />
+                    > Redesigned and led the development of a web application plugin used by data scientists and
+                    machine
+                    learning engineers to manage machine learning models <br /><br />
+                    > Redeveloped and open-sourced an internal CLI/SDK, <u><i><a target="_blank"
+                                rel="noopener noreferrer" href="https://github.com/intuit/mlctl">mlctl</a></i></u>, that
+                    allows ML Lifecycle operations
+                    to be controlled via a single command line interface or notebook environment<br />
+                </p>
+            </div>
+            <div class="experiencePosition title">
+                SOFTWARE ENGINEER INTERN<br />
+                <span class="experienceDate description">JUN 2019 - SEPT 2019</span>
+            </div>
+            <div class="timelineLine">
+                <div class="timelinePoint"></div>
+            </div>
+            <div class="timelineEntry main">
+                <span id="experienceLocation" class="title">INTUIT</span><br />
+                <br />
+                <p class="description">
+                    > Assisted in maintaining an internal web application used by tax analysts to create and modify
+                    models for calculating tax returns <br /><br />
+                    > Integrated the frontend of the web application with the backend using REST API and React.js,
+                    improving performance time by 80% <br /><br />
+                    > Accelerated testing procedures by developing the test automation infrastructure of the web
+                    application, leveraging Selenium, Jenkins, and Docker <br />
+                </p>
+            </div>
+            <div class="experiencePosition title">
+                RESEARCH ASSISTANT<br />
+                <span class="experienceDate description">JAN 2019 - JUN 2020</span>
+            </div>
+            <div class="timelineLine">
+                <div class="timelinePoint"></div>
+            </div>
+            <div class="timelineEntry main">
+                <span id="experienceLocation" class="title">INVESTIGATING VIRTUAL LEARNING ENVIRONMENT (IVLE), UC
+                    IRVINE</span><br />
+                <br />
+                <p class="description">
+                    > Conducted a systematic comparison of ML models in predicting academic success to
+                    better inform stakeholders regarding the use of predictive models in higher education <br /><br />
+                    > Extracted various combinations of predictors from student clickstream data and trained 5 ML models
+                    (including classical and black-box models) <br /><br />
+                    > Evaluated the models under technical and ethical considerations by determining overall predictive
+                    accuracy and satisfaction of fairness criteria
+                    <br />
+                </p>
+            </div>
+            <div class="experiencePosition title">
+                RESEARCH ASSISTANT<br />
+                <span class="experienceDate description">JAN 2017 - JUN 2019</span>
+            </div>
+            <div class="timelineLine">
+                <div class="timelinePoint"></div>
+            </div>
+            <div class="timelineEntry main">
+                <span id="experienceLocation" class="title">CALIT2 UC IRVINE DIVISION</span><br />
+                <br />
+                <p class="description">
+                    > Assessed the efficacy of our device, <a href="#projects"><u><i>PET</i></u></a>, in promoting
+                    physical exercise
+                    at home <br /><br />
+                    > Constructed the overall user testing structure, oversaw user testing sessions and analyzed user
+                    feedback<br /><br />
+                    > Presented our project at UC Irvine's annual research symposium<br />
+                </p>
+            </div>
+            <div class="experiencePosition title">
+                PROGRAMMING INSTRUCTOR<br />
+                <span class="experienceDate description">JUN 2017 - AUG 2017</span>
+            </div>
+            <div class="timelineLine">
+                <div class="timelinePoint"></div>
+            </div>
+            <div class="timelineEntry main">
+                <span id="experienceLocation" class="title">TECHSMART ACADEMY</span><br />
+                <br />
+                <p class="description">
+                    > Educated children ages 9-14 on the fundamentals of Python and Java by integrating a curriculum
+                    that utilized Minecraft and modified preexisting functions and characters of the
+                    game<br /><br />
+                    > Covered data types, simple data structures, conditional statements and looping methods<br />
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="gradientLight">
+            <div class="slideshow">
+                <div id="slide1" class="slide main">
+                    <div class="projectRightColumn">
+                        <img src="images/PET.png" class="resizeProject">
+                    </div>
+                    <p class="projectLeftColumn description ">
+                        <span class="projectName title">PET: PERSONAL EMBODIED TRAINER</span><br />
+                        <span>JAN 2017 - JUN 2019</span><br />
                         <br>
-                        <span class = "projectDate">MARCH <span id="numbers"><i>2018</i></span></span><br />
-                        <br>
-                        - CREATED A GAME MIMICKING THE BOARD GAME OTHELLO USING PYTHON AND DEVELOPED THE GUI
-                        UTILZING TKINTER <br />
-                        - WHILE THE RULES OF THE GAME REFLECT THAT OF OTHELLO, USERS ARE ABLE TO SPECIFICY THE NUMBER OF 
-                        ROWS AND COLUMNS IN THE BOARD, THE FIRST PLAYER, HOW THE GAME IS WON (WITH LESS OR MORE PIECES) 
-                        AND THE LOCATION OF THE STARTING PIECES <br />
-                        - LATER IMPLEMENTED AN AI UTILIZING A RECURSIVE MINMAX ALGORITHM TO DETERMINE OPTIMAL MOVES <br />
+                        > Collaborated with team members to devise an interactive Chromecast application that assists
+                        users in monitoring workout progress by providing feedback on form and speed of exercises via
+                        motion
+                        tracking<br /><br />
+                        > Enhanced the user interface of the application by researching the efficacy of sound, color,
+                        and animations in motivating users and implemented new features accordingly<br /><br />
                     </p>
                 </div>
-                <a class="prev" onclick="advanceSlide(-1)">&#10094;</a>
-                <a class="next" onclick="advanceSlide(1)">&#10095;</a>
+                <div id="slide2" class="slide notActive main">
+                    <div class="projectRightColumn">
+                        <img src="images/OthelloBoard.png" class="resizeProject">
+                    </div>
+                    <p class="projectLeftColumn description ">
+                        <span class="projectName title">OTHELLO</span><br />
+                        <span>MARCH 2018</span><br />
+                        <br>
+                        > Developed a game mimicking the board game Othello utilizing Python and Tkinter for the
+                        GUI<br /><br />
+                        > Expanded upon the original game by allowing users to specificy the number of rows and columns
+                        in the board, the first player, how the game is won (with less or more pieces) and the
+                        experienceLocation
+                        of the starting pieces <br /><br />
+                        > Implemented an AI utilizing a recursive minimax algorithm to determine optimal moves
+                        <br />
+                    </p>
+                </div>
             </div>
             <br>
-
-            <div style="text-align:center">
-                <span class="dot dot1" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
+            <div>
+                <span id="project1" class="dot activeDot" onclick="showSlide(1)"></span>
+                <span id="project2" class="dot" onclick="showSlide(2)"></span>
             </div>
-        </div>
+        </section>
+    </div>
+</body>
 
-                
-    </body>
 </html>
